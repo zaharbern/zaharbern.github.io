@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Demo — Menuo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">M</div>
+                <span class="logo-text">Menuo</span>
+            </a>
+            <a href="index1.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <div class="demo-page">
+        <div class="demo-info">
+            <div class="demo-info-content">
+                <div class="demo-badge">Free Demo</div>
+                <h1>See <span>Menuo</span> in action</h1>
+                <p>Get a personalized walkthrough of our AI-powered restaurant management platform and see how it can transform your operations.</p>
+                
+                <div class="demo-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <div class="benefit-content"><h4>30-Minute Demo</h4><p>Quick, focused session tailored to your needs</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z"/></svg></div>
+                        <div class="benefit-content"><h4>AI Features Preview</h4><p>See our intelligent predictions in action</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+                        <div class="benefit-content"><h4>Q&A Session</h4><p>Get all your questions answered by our experts</p></div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                        <div class="benefit-content"><h4>Custom Pricing</h4><p>Get a quote tailored to your restaurant size</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-form-section">
+            <div class="demo-form-container">
+                <div class="demo-form-header">
+                    <h2>Book Your Free Demo</h2>
+                    <p>Fill out the form below and we'll be in touch within 24 hours.</p>
+                </div>
+
+                <form class="demo-form" id="demoForm" onsubmit="submitForm(event)">
+                    <div class="form-section-title">Contact Information</div>
+                    <div class="form-row">
+                        <div class="form-group"><label class="form-label">First Name <span class="required">*</span></label><input type="text" name="firstName" class="form-input" placeholder="John" required></div>
+                        <div class="form-group"><label class="form-label">Last Name <span class="required">*</span></label><input type="text" name="lastName" class="form-input" placeholder="Smith" required></div>
+                    </div>
+                    <div class="form-group"><label class="form-label">Work Email <span class="required">*</span></label><input type="email" name="email" class="form-input" placeholder="john@restaurant.com" required></div>
+                    <div class="form-group"><label class="form-label">Phone Number <span class="required">*</span></label><input type="tel" name="phone" class="form-input" placeholder="+1 (555) 123-4567" required></div>
+
+                    <div class="form-divider"></div>
+                    <div class="form-section-title">Restaurant Information</div>
+
+                    <div class="form-group"><label class="form-label">Restaurant Name <span class="required">*</span></label><input type="text" name="restaurantName" class="form-input" placeholder="Your Restaurant Name" required></div>
+                    <div class="form-row">
+                        <div class="form-group"><label class="form-label">Restaurant Type <span class="required">*</span></label>
+                            <select name="restaurantType" class="form-input" required><option value="">Select type...</option><option>Fine Dining</option><option>Casual Dining</option><option>Fast Casual</option><option>Quick Service</option><option>Cafe / Coffee Shop</option><option>Bar / Nightclub</option><option>Food Truck</option><option>Ghost Kitchen</option><option>Other</option></select>
+                        </div>
+                        <div class="form-group"><label class="form-label">Number of Locations</label>
+                            <select name="locations" class="form-input"><option value="">Select...</option><option>1</option><option>2-5</option><option>6-10</option><option>11-25</option><option>26-50</option><option>50+</option></select>
+                        </div>
+                    </div>
+                    <div class="form-group"><label class="form-label">Current POS System</label>
+                        <select name="posSystem" class="form-input"><option value="">Select your POS...</option><option>Toast</option><option>Square</option><option>Clover</option><option>Lightspeed</option><option>TouchBistro</option><option>Revel</option><option>Aloha</option><option>MICROS</option><option>SpotOn</option><option>No POS Currently</option><option>Other</option></select>
+                    </div>
+                    <div class="form-group"><label class="form-label">What features interest you most?</label>
+                        <select name="interestedFeatures" class="form-input"><option value="">Select feature...</option><option>AI-Powered Inventory Predictions</option><option>Order Management</option><option>Reservation System</option><option>Staff Management</option><option>Financial Reports</option><option>Analytics & Reporting</option><option>All Features</option></select>
+                    </div>
+                    <div class="form-group"><label class="form-label">Anything else we should know?</label><textarea name="additionalInfo" class="form-input" placeholder="Tell us about your specific needs or challenges..."></textarea></div>
+
+                    <button type="submit" class="btn-submit">Book My Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                    <p class="form-note">By submitting, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <h3>Demo Request Received!</h3>
+                    <p>Thank you for your interest in Menuo. Our team will contact you within 24 hours to schedule your personalized demo.</p>
+                    <a href="index.html" class="btn-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function submitForm(e) {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('.btn-submit');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+            submitBtn.disabled = true;
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                const response = await fetch('/api/demo-request', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                if (response.ok) { showSuccess(); } else { throw new Error('Failed'); }
+            } catch (error) {
+                console.log('Demo mode: Would send to backend', data);
+                showSuccess();
+            }
+            
+            form.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        }
+        
+        function showSuccess() {
+            document.getElementById('demoForm').style.display = 'none';
+            document.querySelector('.demo-form-header').style.display = 'none';
+            document.getElementById('successMessage').classList.add('active');
+        }
+        
+        window.addEventListener('beforeunload', () => {
+            const form = document.getElementById('demoForm');
+            if (form) form.reset();
+        });
+        
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.setAttribute('autocomplete', 'off');
+        });
+    </script>
+</body>
+</html>

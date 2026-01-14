@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuo — AI-Powered Restaurant Management</title>
+    <meta name="description" content="Transform your restaurant operations with AI-powered insights, smart inventory predictions, and seamless management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><div class="logo-icon">M</div><span class="logo-text">Menuo</span></a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#platform" class="nav-link">Platform</a>
+                <a href="#ai" class="nav-link">AI Assistant</a>
+                <a href="#statistics" class="nav-link">Analytics</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-ghost">Log In</a>
+                <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+            <a href="#features" class="mobile-menu-link" onclick="toggleMobileMenu()">Features</a>
+            <a href="#platform" class="mobile-menu-link" onclick="toggleMobileMenu()">Platform</a>
+            <a href="#ai" class="mobile-menu-link" onclick="toggleMobileMenu()">AI Assistant</a>
+            <a href="#statistics" class="mobile-menu-link" onclick="toggleMobileMenu()">Analytics</a>
+            <a href="#pricing" class="mobile-menu-link" onclick="toggleMobileMenu()">Pricing</a>
+        </div>
+        <div class="mobile-menu-buttons">
+            <a href="#" class="btn btn-secondary">Log In</a>
+            <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"><div class="hero-gradient"></div><div class="hero-grid"></div></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="hero-badge-dot"></span>Now with AI-Powered Predictions</div>
+                <h1><span class="gradient-text">AI-Powered</span> Restaurant Management</h1>
+                <p class="hero-description">Transform your restaurant operations with intelligent insights, smart inventory predictions, financial tracking, and seamless management. Everything you need in one beautiful platform.</p>
+                <div class="hero-buttons">
+                    <a href="demo.html" class="btn btn-primary btn-large">Book a Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="#features" class="btn btn-secondary btn-large">See Features</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><div class="hero-stat-value">40%</div><div class="hero-stat-label">Less Food Waste</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">2.5x</div><div class="hero-stat-label">Faster Operations</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">99.9%</div><div class="hero-stat-label">Uptime SLA</div></div>
+                </div>
+            </div>
+            <div class="hero-mockup">
+                <div class="mockup-main">
+                    <div class="mockup-header"><div class="mockup-dot red"></div><div class="mockup-dot yellow"></div><div class="mockup-dot green"></div></div>
+                    <div class="mockup-content">
+                        <div class="mockup-dashboard">
+                            <div class="mockup-stat-card"><div class="mockup-stat-label">Today's Revenue</div><div class="mockup-stat-value green">$4,285</div></div>
+                            <div class="mockup-stat-card"><div class="mockup-stat-label">Active Orders</div><div class="mockup-stat-value purple">24</div></div>
+                            <div class="mockup-stat-card"><div class="mockup-stat-label">Reservations</div><div class="mockup-stat-value yellow">18</div></div>
+                        </div>
+                        <div class="mockup-chart">
+                            <div class="mockup-chart-title">Weekly Revenue</div>
+                            <div class="mockup-chart-bars">
+                                <div class="mockup-bar" style="height:60%"></div><div class="mockup-bar" style="height:80%"></div><div class="mockup-bar" style="height:65%"></div><div class="mockup-bar" style="height:90%"></div><div class="mockup-bar" style="height:75%"></div><div class="mockup-bar" style="height:95%"></div><div class="mockup-bar" style="height:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                    <div class="floating-card-text">Payment Received</div><div class="floating-card-subtext">Invoice #1247 • $847.50</div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z"/></svg></div>
+                    <div class="floating-card-text">AI Prediction</div><div class="floating-card-subtext">Reorder ribeye in 2 days</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Features</div>
+                <h2 class="section-title">Everything you need to run a modern restaurant</h2>
+                <p class="section-description">From orders to inventory, finances to analytics — manage every aspect of your restaurant from one powerful dashboard.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg></div>
+                    <h3 class="feature-title">Order Management</h3>
+                    <p class="feature-description">Real-time order tracking with kitchen display integration. Process orders 2x faster with smart workflows.</p>
+                </div></div>
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                    <h3 class="feature-title">Financial Management</h3>
+                    <p class="feature-description">Track revenue, expenses, profit margins in real-time. Generate financial reports with one click.</p>
+                </div></div>
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+                    <h3 class="feature-title">Document Storage</h3>
+                    <p class="feature-description">Store invoices, contracts, licenses, and receipts. All your documents organized and accessible anywhere.</p>
+                </div></div>
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9m9 10h-9M4 7h.01M4 17h.01"/></svg></div>
+                    <h3 class="feature-title">Smart Inventory</h3>
+                    <p class="feature-description">AI-powered stock predictions. Know exactly when to reorder and reduce food waste by up to 40%.</p>
+                </div></div>
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">Deep insights into sales trends, peak hours, best-sellers. Make data-driven decisions that boost revenue.</p>
+                </div></div>
+                <div class="feature-card reveal"><div class="feature-card-content">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/></svg></div>
+                    <h3 class="feature-title">Staff Management</h3>
+                    <p class="feature-description">Scheduling, time tracking, and payroll integration. Keep your team organized and reduce labor costs.</p>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid - Platform Overview -->
+    <section class="bento-section" id="platform">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Platform</div>
+                <h2 class="section-title">One platform for everything</h2>
+                <p class="section-description">Finances, documents, statistics, and AI — all integrated seamlessly to give you complete control over your restaurant.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card large reveal">
+                    <div class="bento-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                    <h3 class="bento-title">Complete Financial Control</h3>
+                    <p class="bento-description">Track every dollar in real-time. Revenue, expenses, profit margins, cash flow — all in one dashboard with automatic categorization.</p>
+                    <div class="bento-stats-row">
+                        <div class="bento-stat-item"><div class="bento-stat-value green">$127,450</div><div class="bento-stat-label">Monthly Revenue</div></div>
+                        <div class="bento-stat-item"><div class="bento-stat-value">$89,215</div><div class="bento-stat-label">Expenses</div></div>
+                        <div class="bento-stat-item"><div class="bento-stat-value purple">$38,235</div><div class="bento-stat-label">Net Profit</div></div>
+                        <div class="bento-stat-item"><div class="bento-stat-value green">30.0%</div><div class="bento-stat-label">Profit Margin</div></div>
+                    </div>
+                </div>
+                <div class="bento-card medium reveal">
+                    <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+                    <h3 class="bento-title">Document Hub</h3>
+                    <p class="bento-description">All your important files in one secure place.</p>
+                    <div class="doc-list">
+                        <div class="doc-item"><div class="doc-icon" style="background:rgba(255,107,107,0.15)">📄</div><div class="doc-info"><div class="doc-name">Business License 2025</div><div class="doc-meta">PDF • Updated Jan 5</div></div></div>
+                        <div class="doc-item"><div class="doc-icon" style="background:rgba(0,212,170,0.15)">📊</div><div class="doc-info"><div class="doc-name">Q4 Financial Report</div><div class="doc-meta">XLSX • 2.4 MB</div></div></div>
+                        <div class="doc-item"><div class="doc-icon" style="background:rgba(99,91,255,0.15)">🧾</div><div class="doc-info"><div class="doc-name">Supplier Invoice #847</div><div class="doc-meta">PDF • Today</div></div></div>
+                    </div>
+                </div>
+                <div class="bento-card half reveal">
+                    <div class="bento-icon yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+                    <h3 class="bento-title">Real-Time Statistics</h3>
+                    <p class="bento-description">Track sales, orders, and performance metrics as they happen.</p>
+                    <div class="mini-chart">
+                        <div class="mini-bar" style="height:45%"></div><div class="mini-bar" style="height:65%"></div><div class="mini-bar" style="height:55%"></div><div class="mini-bar" style="height:80%"></div><div class="mini-bar" style="height:70%"></div><div class="mini-bar" style="height:90%"></div><div class="mini-bar" style="height:85%"></div><div class="mini-bar" style="height:75%"></div><div class="mini-bar" style="height:95%"></div>
+                    </div>
+                </div>
+                <div class="bento-card half reveal">
+                    <div class="bento-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z"/></svg></div>
+                    <h3 class="bento-title">AI-Powered Insights</h3>
+                    <p class="bento-description">Ask questions in plain English. Get instant answers about your business.</p>
+                    <div class="doc-list">
+                        <div class="doc-item"><div class="doc-icon" style="background:rgba(99,91,255,0.15)">💡</div><div class="doc-info"><div class="doc-name">"Ribeye stock runs out in 2 days"</div><div class="doc-meta">AI Prediction • High Priority</div></div></div>
+                        <div class="doc-item"><div class="doc-icon" style="background:rgba(0,212,170,0.15)">📈</div><div class="doc-info"><div class="doc-name">"Weekend revenue up 23%"</div><div class="doc-meta">Trend Analysis • Positive</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="ai-section" id="ai">
+        <div class="container">
+            <div class="ai-grid">
+                <div class="ai-content reveal">
+                    <div class="section-badge">AI Assistant</div>
+                    <h2 class="section-title">Your restaurant's intelligent co-pilot</h2>
+                    <p class="section-description">Ask questions in plain English and get instant insights. Our AI analyzes your data to help you make smarter decisions.</p>
+                    <div class="ai-features-list">
+                        <div class="ai-feature-item">
+                            <div class="ai-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                            <div class="ai-feature-content"><h4>Predictive Inventory</h4><p>Know exactly when stock will run out based on consumption patterns</p></div>
+                        </div>
+                        <div class="ai-feature-item">
+                            <div class="ai-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                            <div class="ai-feature-content"><h4>Financial Forecasting</h4><p>Predict revenue, identify cost-saving opportunities</p></div>
+                        </div>
+                        <div class="ai-feature-item">
+                            <div class="ai-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+                            <div class="ai-feature-content"><h4>Natural Language Queries</h4><p>"How did we perform last weekend?" — instant answers</p></div>
+                        </div>
+                        <div class="ai-feature-item">
+                            <div class="ai-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                            <div class="ai-feature-content"><h4>Trend Detection</h4><p>Automatically spot patterns and anomalies in your data</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-mockup reveal">
+                    <div class="ai-chat-window">
+                        <div class="ai-chat-header">
+                            <div class="ai-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z"/></svg></div>
+                            <div><div class="ai-chat-title">Menuo AI Assistant</div><div class="ai-chat-status">Online</div></div>
+                        </div>
+                        <div class="ai-chat-messages">
+                            <div class="ai-message user">Show me this month's financial summary</div>
+                            <div class="ai-message assistant">Here's your January overview:<br><br>💰 <strong>Revenue:</strong> $127,450 (+18%)<br>📉 <strong>Expenses:</strong> $89,215<br>📊 <strong>Net Profit:</strong> $38,235<br>✨ <strong>Margin:</strong> 30.0%<br><br>Top seller: Ribeye Steak ($12,450). Food costs 2% above target.</div>
+                            <div class="ai-message user">What should I reorder this week?</div>
+                            <div class="ai-message assistant">Based on stock and reservations:<br><br>🔴 <strong>Critical:</strong><br>• Ribeye Steak — 2 days left<br>• House Red Wine — 3 days<br><br>🟡 <strong>Soon:</strong><br>• Salmon — 5 days<br>• Butter — 5 days<br><br>Want me to create a purchase order?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="statistics">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Analytics</div>
+                <h2 class="section-title">Data-driven decisions made easy</h2>
+                <p class="section-description">Beautiful dashboards that turn complex data into actionable insights.</p>
+            </div>
+            <div class="stats-preview reveal">
+                <div class="stats-header">
+                    <h3 style="font-size:18px;font-weight:600">Revenue Overview</h3>
+                    <div class="stats-tabs">
+                        <button class="stats-tab active">Daily</button>
+                        <button class="stats-tab">Weekly</button>
+                        <button class="stats-tab">Monthly</button>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-card-label">Total Revenue</div><div class="stat-card-value" style="color:var(--accent-success)">$4,285</div><div class="stat-card-change positive">↑ +18.2%</div></div>
+                    <div class="stat-card"><div class="stat-card-label">Orders</div><div class="stat-card-value">127</div><div class="stat-card-change positive">↑ +12.5%</div></div>
+                    <div class="stat-card"><div class="stat-card-label">Avg. Order</div><div class="stat-card-value">$33.74</div><div class="stat-card-change positive">↑ +5.1%</div></div>
+                    <div class="stat-card"><div class="stat-card-label">Guests</div><div class="stat-card-value">284</div><div class="stat-card-change negative">↓ -3.2%</div></div>
+                </div>
+                <div class="stats-chart">
+                    <div class="stats-chart-title">Hourly Sales Distribution</div>
+                    <div class="stats-chart-bars">
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:20px"></div><span class="stats-chart-bar-label">10</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:35px"></div><span class="stats-chart-bar-label">11</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:90px"></div><span class="stats-chart-bar-label">12</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:120px"></div><span class="stats-chart-bar-label">13</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:60px"></div><span class="stats-chart-bar-label">14</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:40px"></div><span class="stats-chart-bar-label">15</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:45px"></div><span class="stats-chart-bar-label">16</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:75px"></div><span class="stats-chart-bar-label">17</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:125px"></div><span class="stats-chart-bar-label">18</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:140px"></div><span class="stats-chart-bar-label">19</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:130px"></div><span class="stats-chart-bar-label">20</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:95px"></div><span class="stats-chart-bar-label">21</span></div>
+                        <div class="stats-chart-bar"><div class="stats-chart-bar-fill" style="height:55px"></div><span class="stats-chart-bar-label">22</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">Pricing</div>
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-description">Choose the plan that fits your restaurant. All plans include a 14-day free trial.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-description">Perfect for small restaurants</div>
+                    <div class="pricing-price"><span class="pricing-amount">$299</span><span class="pricing-period">/month</span></div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Order Management</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Reservations System</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Basic Analytics</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Document Storage (5GB)</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Email Support</div>
+                    </div>
+                    <a href="demo.html" class="btn btn-secondary">Start Free Trial</a>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <div class="pricing-name">Professional</div>
+                    <div class="pricing-description">For growing restaurants</div>
+                    <div class="pricing-price"><span class="pricing-amount">$399</span><span class="pricing-period">/month</span></div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Everything in Starter</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>AI Assistant</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Smart Inventory</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Financial Reports</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Staff Management</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Storage (50GB)</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Priority Support</div>
+                    </div>
+                    <a href="demo.html" class="btn btn-primary">Start Free Trial</a>
+                </div>
+                <div class="pricing-card reveal">
+                    <div class="pricing-name">Business</div>
+                    <div class="pricing-description">For restaurant chains</div>
+                    <div class="pricing-price"><span class="pricing-amount">$599</span><span class="pricing-period">/month</span></div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Everything in Professional</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Multi-Location</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>API Access</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Custom Integrations</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Unlimited Storage</div>
+                        <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Account Manager</div>
+                    </div>
+                    <a href="demo.html" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Ready to transform your restaurant?</h2>
+                <p class="cta-description">Join hundreds of restaurants already using Menuo to streamline operations, reduce costs, and boost revenue.</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-primary btn-large">Book a Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><div class="logo-icon">M</div><span class="logo-text">Menuo</span></a>
+                    <p>AI-powered restaurant management platform. Streamline operations, track finances, reduce waste, and grow your business.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a>
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column"><h4>Product</h4><div class="footer-links"><a href="#features" class="footer-link">Features</a><a href="#pricing" class="footer-link">Pricing</a><a href="#" class="footer-link">Integrations</a><a href="#" class="footer-link">API</a></div></div>
+                <div class="footer-column"><h4>Company</h4><div class="footer-links"><a href="#" class="footer-link">About Us</a><a href="#" class="footer-link">Careers</a><a href="#" class="footer-link">Blog</a><a href="#" class="footer-link">Press</a></div></div>
+                <div class="footer-column"><h4>Resources</h4><div class="footer-links"><a href="#" class="footer-link">Documentation</a><a href="#" class="footer-link">Help Center</a><a href="#" class="footer-link">Community</a><a href="#" class="footer-link">Contact</a></div></div>
+                <div class="footer-column"><h4>Legal</h4><div class="footer-links"><a href="#" class="footer-link">Privacy Policy</a><a href="#" class="footer-link">Terms of Service</a><a href="#" class="footer-link">Cookie Policy</a><a href="#" class="footer-link">GDPR</a></div></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">© 2026 Menuo. All rights reserved.</div>
+                <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>
